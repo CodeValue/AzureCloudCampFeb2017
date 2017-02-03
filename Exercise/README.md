@@ -12,7 +12,7 @@ The exercises are built in the form of a "rolling exercise". We start off with a
 The "CodeTweet" system is an enterprise web-based on premise system meant to act as an organization's message board. Registered users can post tweets comprising of up to 140 characters each, and all other users can view these tweets. In addition, users can subscribe to receive notifications on posted tweets causing the system to notify them when such a tweet is posted.
 The system's architecture is depicted in the following diagram:
 
- ![](./system's_architecture.png)
+ ![](./CodeTweet/system's_architecture.png)
 
 1.	Users use the ASP.NET MVC 5 web-based application as their front-end to the system.
 2.	Users' identities are managed using ASP.NET Identity with Entity Framework over a SQL Server database.
