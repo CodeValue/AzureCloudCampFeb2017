@@ -15,7 +15,7 @@
 //----------------------------------------------------------------------------------
 
 namespace DataFileStorageSample
-{    
+{
     using System;
     using System.Collections.Generic;
     using System.IO;
@@ -23,7 +23,8 @@ namespace DataFileStorageSample
     using Microsoft.WindowsAzure;
     using Microsoft.WindowsAzure.Storage;
     using Microsoft.WindowsAzure.Storage.File;
-    
+    using Microsoft.Azure;
+
     /// <summary>
     /// Azure Storage File Sample - Demonstrate how to use the File Storage service. 
     /// 
@@ -105,7 +106,7 @@ namespace DataFileStorageSample
             // Uploading a local file to the directory created above 
             Console.WriteLine("3. Uploading a file to directory");
             CloudFile file = dir.GetFileReference(ImageToUpload);
-            await file.UploadFromFileAsync(ImageToUpload, FileMode.Open);
+            await file.UploadFromFileAsync(ImageToUpload);
 
             // List all files/directories under the root directory
             Console.WriteLine("4. List Files/Directories in root directory");

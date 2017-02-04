@@ -69,7 +69,7 @@
 
             // Insert two documents in to col1
                 
-            Document doc2 = await client.CreateDocumentAsync(col1.DocumentsLink, new { id = "doc2", partitionKey = "pk2" });
+            Document doc1 = await client.CreateDocumentAsync(col1.DocumentsLink, new { id = "doc1", partitionKey = "pk1" });
 
             // Insert one document in to col2
             Document doc3 = await client.CreateDocumentAsync(col2.DocumentsLink, new { id = "doc3" });

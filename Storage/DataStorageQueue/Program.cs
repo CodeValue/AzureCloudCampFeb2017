@@ -15,12 +15,13 @@
 //----------------------------------------------------------------------------------
 namespace DataStorageQueueSample
 {
+    using Microsoft.Azure;
     using Microsoft.WindowsAzure;
     using Microsoft.WindowsAzure.Storage;
     using Microsoft.WindowsAzure.Storage.Queue;
     using System;
     using System.Threading.Tasks;
-     
+
     /// <summary>
     /// Azure Queue Service Sample - The Queue Service provides reliable messaging for workflow processing and for communication 
     /// between loosely coupled components of cloud services. This sample demonstrates how to perform common tasks including  

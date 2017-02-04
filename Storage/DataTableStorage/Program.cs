@@ -17,13 +17,14 @@
 namespace DataTableStorageSample
 {
     using DataTableStorageSample.Model;
+    using Microsoft.Azure;
     using Microsoft.WindowsAzure;
     using Microsoft.WindowsAzure.Storage;
     using Microsoft.WindowsAzure.Storage.Table;
     using System;
     using System.Collections.Generic;
     using System.Net;
-    using System.Threading.Tasks; 
+    using System.Threading.Tasks;
 
     /// <summary>
     /// Azure Table Service Sample - Demonstrate how to perform common tasks using the Microsoft Azure Table storage 
@@ -42,7 +43,7 @@ namespace DataTableStorageSample
     /// - Storage Emulator - http://msdn.microsoft.com/en-us/library/azure/hh403989.aspx
     /// - Asynchronous Programming with Async and Await  - http://msdn.microsoft.com/en-us/library/hh191443.aspx
     /// </summary>
-     
+
     public class Program
     {
         // *************************************************************************************************************************
